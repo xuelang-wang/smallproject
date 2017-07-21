@@ -5,7 +5,7 @@
  *      Author: xiaoquan
  */
 
-#include "CBattle.h"
+#include"CBattle.h"
 #include<iostream>
 #include<cstdlib>
 #include<ctime>
