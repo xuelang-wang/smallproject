@@ -5,3 +5,5 @@
 `FirstProject`代表第一个任务，以此类推
 
 `SecondProject`一个自动格斗小游戏（回合制）
+
+`ThirdProject`简单的设计模式运用（抽象工厂模式AbstractFactory，单例模式Singleton）
