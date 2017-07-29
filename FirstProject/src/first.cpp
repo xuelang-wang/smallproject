@@ -10,44 +10,60 @@
 #include<climits>
 #include<iostream>
 //递归实现
+
+//更新
 char *itostr(int n,char *string){
-	long long ln = n;
-	int i = 0;
-	if(ln == 0){
-		string[0] = '0';
-		i++;
-	}else if(ln < 0){
-		ln = -ln;
-		string[0] = '-';
-		i++;
-	}//是否为负
-	char * st = itostr(ln);
-	int j = 0;
-	while(st[j] != '\0'){
-		string[i] = st[j];
-		i++;
-		j++;
+	if(n < 0){
+		n = -n;
+		*string = '-';
+		string++;
 	}
-	string[i] = '\0';
+	if(n / 10 != 0)
+		string  = itostr(n/10,string);
+	*string = n % 10 + '0';
+	string++;
+	*string = '\0';
 	return string;
 }
-char *itostr(long long n){
-	char * res = new char[11];
-	res[0] = '\0';
-	if(n == 0)
-		return res;
-	else{
-		res = itostr(n/10);
-		int i = 0;
-		while(res[i] != '\0'){
-			i++;
-		}
-		res[i] = n%10 + '0';
-		res[i+1] = '\0';
-		return res;
-	}
 
-}
+
+//char *itostr(int n,char *string){
+//	long long ln = n;
+//	int i = 0;
+//	if(ln == 0){
+//		string[0] = '0';
+//		i++;
+//	}else if(ln < 0){
+//		ln = -ln;
+//		string[0] = '-';
+//		i++;
+//	}//是否为负
+//	char * st = itostr(ln);
+//	int j = 0;
+//	while(st[j] != '\0'){
+//		string[i] = st[j];
+//		i++;
+//		j++;
+//	}
+//	string[i] = '\0';
+//	return string;
+//}
+//char *itostr(long long n){
+//	char * res = new char[11];
+//	res[0] = '\0';
+//	if(n == 0)
+//		return res;
+//	else{
+//		res = itostr(n/10);
+//		int i = 0;
+//		while(res[i] != '\0'){
+//			i++;
+//		}
+//		res[i] = n%10 + '0';
+//		res[i+1] = '\0';
+//		return res;
+//	}
+//}
 
 
 /*非递归实现*/

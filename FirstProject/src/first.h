@@ -44,6 +44,10 @@ public:
 	bool operator>(const CNString &s);
 	bool operator==(const CNString &s);
 
+	size_t size(){
+		return len;
+	}
+
 	/*重载输出<<操作
 	 * 在输出流os中输出字符串s，
 	 * 并返回输出流*/
