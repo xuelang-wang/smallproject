@@ -1,0 +1,6 @@
+syntax  = "proto2";
+
+message log_packet{
+	required int32 id = 1;
+	required string str = 2;
+}
