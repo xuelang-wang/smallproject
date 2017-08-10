@@ -1,0 +1,41 @@
+﻿生成启动时间为 2017/8/10 17:15:19。
+     1>项目“E:\wanglong\FithProject\testdb\testdb\testdb.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\MySQL\MySQL Connector.C 6.1\include" /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt testdb.cpp
+         testdb.cpp
+     1>testdb.cpp(51): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(283) : 参见“scanf”的声明
+     1>testdb.cpp(80): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>testdb.cpp(81): warning C4267: “参数”: 从“size_t”转换到“unsigned long”，可能丢失数据
+     1>testdb.cpp(94): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>testdb.cpp(95): warning C4267: “参数”: 从“size_t”转换到“unsigned long”，可能丢失数据
+     1>testdb.cpp(110): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>testdb.cpp(111): warning C4267: “参数”: 从“size_t”转换到“unsigned long”，可能丢失数据
+     1>testdb.cpp(124): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>testdb.cpp(125): warning C4267: “参数”: 从“size_t”转换到“unsigned long”，可能丢失数据
+     1>testdb.cpp(140): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>testdb.cpp(141): warning C4267: “参数”: 从“size_t”转换到“unsigned long”，可能丢失数据
+     1>testdb.cpp(156): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>testdb.cpp(157): warning C4267: “参数”: 从“size_t”转换到“unsigned long”，可能丢失数据
+     1>testdb.cpp(172): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>testdb.cpp(173): warning C4267: “参数”: 从“size_t”转换到“unsigned long”，可能丢失数据
+     1>testdb.cpp(182): warning C4018: “<”: 有符号/无符号不匹配
+     1>testdb.cpp(194): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>testdb.cpp(195): warning C4267: “参数”: 从“size_t”转换到“unsigned long”，可能丢失数据
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\wanglong\FithProject\testdb\x64\Debug\testdb.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\MySQL\MySQL Connector.C 6.1\lib" libmysql.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\wanglong\FithProject\testdb\x64\Debug\testdb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\wanglong\FithProject\testdb\x64\Debug\testdb.lib" /MACHINE:X64 x64\Debug\stdafx.obj
+         x64\Debug\testdb.obj
+         testdb.vcxproj -> E:\wanglong\FithProject\testdb\x64\Debug\testdb.exe
+     1>已完成生成项目“E:\wanglong\FithProject\testdb\testdb\testdb.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.69

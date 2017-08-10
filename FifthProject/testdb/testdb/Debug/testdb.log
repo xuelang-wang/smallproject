@@ -1,0 +1,19 @@
+﻿生成启动时间为 2017/8/9 20:51:29。
+     1>项目“E:\wanglong\FithProject\testdb\testdb\testdb.vcxproj”在节点 2 上(Build 个目标)。
+     1>Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\wanglong\FithProject\testdb\Debug\testdb.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\MySQL\MySQL Server 5.7\lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\wanglong\FithProject\testdb\Debug\testdb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\wanglong\FithProject\testdb\Debug\testdb.lib" /MACHINE:X86 Debug\stdafx.obj
+         Debug\testdb.obj
+     1>testdb.obj : error LNK2019: 无法解析的外部符号 _mysql_num_fields@4，该符号在函数 "void __cdecl queryDB(void)" (?queryDB@@YAXXZ) 中被引用
+     1>testdb.obj : error LNK2019: 无法解析的外部符号 _mysql_error@4，该符号在函数 "void __cdecl deleteDB(void)" (?deleteDB@@YAXXZ) 中被引用
+     1>testdb.obj : error LNK2019: 无法解析的外部符号 _mysql_init@4，该符号在函数 _main 中被引用
+     1>testdb.obj : error LNK2019: 无法解析的外部符号 _mysql_real_connect@32，该符号在函数 _main 中被引用
+     1>testdb.obj : error LNK2019: 无法解析的外部符号 _mysql_real_query@12，该符号在函数 "void __cdecl deleteDB(void)" (?deleteDB@@YAXXZ) 中被引用
+     1>testdb.obj : error LNK2019: 无法解析的外部符号 _mysql_free_result@4，该符号在函数 "void __cdecl queryDB(void)" (?queryDB@@YAXXZ) 中被引用
+     1>testdb.obj : error LNK2019: 无法解析的外部符号 _mysql_fetch_row@4，该符号在函数 "void __cdecl queryDB(void)" (?queryDB@@YAXXZ) 中被引用
+     1>testdb.obj : error LNK2019: 无法解析的外部符号 _mysql_close@4，该符号在函数 _main 中被引用
+     1>E:\wanglong\FithProject\testdb\Debug\testdb.exe : fatal error LNK1120: 8 个无法解析的外部命令
+     1>已完成生成项目“E:\wanglong\FithProject\testdb\testdb\testdb.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.33
