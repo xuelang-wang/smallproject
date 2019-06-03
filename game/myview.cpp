@@ -56,11 +56,11 @@ void MyView::clearFullRows()
                 box->setGraphicsEffect(blurEffect);
                 QPropertyAnimation *animation = new QPropertyAnimation(box,"scale");
                 animation->setEasingCurve(QEasingCurve::OutBounce);
-                animation->setDuration(250);
+                animation->setDuration(200);
                 animation->setStartValue(4);
-                animation->setEndValue(0.25);
+                animation->setEndValue(0);
                 animation->start(QAbstractAnimation::DeleteWhenStopped);
-                connect(animation,SIGNAL(finished()),box,SLOT(deletaLater()));
+                connect(animation,SIGNAL(finished()),box,SLOT(deleteLater()));
             }
             // 保存满行的位置
             rows << y;
@@ -69,7 +69,7 @@ void MyView::clearFullRows()
     // 如果有满行，下移满行上面的各行再出现新的方块组
     // 如果没有满行，则直接出现新的方块组
     if(rows.count() > 0){
-        QTimer::singleShot(400,this,SLOT(moveBox()));
+        QTimer::singleShot(202,this,SLOT(moveBox()));
     }else{
         boxGroup->createBox(QPointF(300,70),nextBoxGroup->getCurrentShape());
         // 清空并销毁提示方块组中的所有小方块
@@ -390,13 +390,28 @@ void MyView::initGame()
 
 void MyView::updateScore(const int fullRowNum)
 {
-     int score = fullRowNum *100;
+     int score = 0;
+     switch (fullRowNum){
+     case 1:
+         score = 100;
+         break;
+     case 2:
+         score = 300;
+         break;
+     case 3:
+         score = 600;
+         break;
+     case 4:
+         score = 1000;
+         break;
+     }
+
      int currentScore = gameScoreText->toPlainText().toInt();
      currentScore += score;
      gameScoreText->setHtml(QString("<font color= red>%1</font>").arg(currentScore));
-     if(currentScore < 500){
+     if(currentScore < 1000){
          // 第一级，什么都不用做
-     }else if(currentScore < 1000){
+     }else if(currentScore < 5000){
          // 第二级
          gameLevelText->setHtml("<font color = white>第<br>二<br>幕</font>");
          scene()->setBackgroundBrush(QPixmap(":/images/background02.png"));
@@ -405,6 +420,10 @@ void MyView::updateScore(const int fullRowNum)
          boxGroup->startTimer(gameSpeed);
      }else{
          // 添加下一个级别的设置
+         gameLevelText->setHtml("<font color = white>你<br>也<br>是<br>够<br>无<br>聊<br>~</font>");
+         gameSpeed = 300 / (currentScore/5000);
+         boxGroup->stopTimer();
+         boxGroup->startTimer(gameSpeed);
      }
 }
 
